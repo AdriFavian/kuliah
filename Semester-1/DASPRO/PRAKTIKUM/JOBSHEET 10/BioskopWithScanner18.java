@@ -9,17 +9,17 @@ public class BioskopWithScanner18 {
         String [][] penonton = new String [4][2];
 
         while (true) {
-            System.out.println("Masukkan nama: ");
+            System.out.print("Masukkan nama: ");
             nama = sc.nextLine();
-            System.out.println("Masukkan baris: ");
+            System.out.print("Masukkan baris: ");
             baris = sc.nextInt();
-            System.out.println("Masukkan kolom: ");
+            System.out.print("Masukkan kolom: ");
             kolom = sc.nextInt();
             sc.nextLine();
 
             penonton[baris-1][kolom-1] = nama;
 
-            System.out.println("Input penonton lainnya? (y/n): ");
+            System.out.print("Input penonton lainnya? (y/n): ");
             next = sc.nextLine();
 
             if (next.equalsIgnoreCase("n")) {
