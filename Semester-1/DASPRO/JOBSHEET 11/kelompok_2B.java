@@ -1,4 +1,4 @@
-public class daspro_bintang_right {
+public class kelompok_2B {
     public static void main(String[] args) {
             int i = 0;
             while(i <= 10) {
