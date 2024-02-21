@@ -124,7 +124,13 @@ public class BukuMain18 {
 
 #### 2.2.3 Pertanyaan
 
-1. Pada class BukuMain, tunjukkan baris kode program yang digunakan untuk proses instansiasi!
+1. Pada class `BukuMain`, tunjukkan baris kode program yang digunakan untuk proses instansiasi!
 Apa nama object yang dihasilkan?
 2. Bagaimana cara mengakses atribut dan method dari suatu objek?
-3. Mengapa hasil output pemanggilan method tampilInformasi() pertama dan kedua berbeda?
+3. Mengapa hasil output pemanggilan method `tampilInformasi()` pertama dan kedua berbeda?
+
+#### 2.2.4 Jawaban
+
+1. baris kode program yang digunakan untuk proses instansiasi:
+```Buku18 bk1 = new Buku18();```
+nama object yang dihasilkan: `bk1`
