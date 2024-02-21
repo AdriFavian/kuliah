@@ -168,3 +168,5 @@ public class BukuMain18 {
 ```
 
 #### 2.3.2 Verifikasi Hasil Percobaan
+
+![image](./img/img3.png)
