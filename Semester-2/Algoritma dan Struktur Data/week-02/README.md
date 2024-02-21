@@ -61,10 +61,12 @@ sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih bes
 
 #### 2.1.4 Jawaban
 
-1.) - Encapsulation: menggabungkan data dan method menjadi satu kesatuan
-    - Inheritance: memungkinkan untuk reuse code dan mempermudah pemograman yang kompleks
+1.) 
+- Encapsulation: menggabungkan data dan method menjadi satu kesatuan
+- Inheritance: memungkinkan untuk reuse code dan mempermudah pemograman yang kompleks
 
 2.)  ada 5:
+
     - judul: String
     - pengarang: String
     - halaman: int
@@ -72,6 +74,7 @@ sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih bes
     - harga: int
 
 3.) ada 4:
+
     - tampilInformasi(): void
     - terjual(jml: int): void
     - restock(n: int): void
