@@ -100,6 +100,36 @@ sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih bes
     }
 ```
 
-5.) method `restock()` mempunyai satu paramater berupa bilangan `int`, dikarenakan restock adalah aktifitas untuk menambahkan stock barang, dimana barang tesebut diwakilkan oleh jumlah yang biasanya memakai tipe data `int`. 
+5.) method `restock()` mempunyai satu paramater berupa bilangan `int`, dikarenakan restock adalah aktifitas untuk menambahkan stock barang, dimana barang tesebut diwakilkan oleh jumlah yang biasanya memakai tipe data `int`.
 
+### Percobaan 2: Instansiasi Object, serta Mengakses Atribut dan Method
 
+Code:
+```
+public class BukuMain18 {
+    public static void main(String[] args) {
+        Buku18 bk1 = new Buku18();
+        bk1.judul = "Today Ends Tomorrow Comes";
+        bk1.pengarang = "Denanda Pratiwi";
+        bk1.halaman = 198;
+        bk1.stok = 13;
+        bk1.harga = 71000;
+
+        bk1.tampilInformasi();
+        bk1.terjual(5, bk1.judul);
+        bk1.gantiHarga (60000);
+        bk1.tampilInformasi();
+    }
+}
+```
+
+#### 2.2.2 Verifikasi Hasil Percobaan
+
+![image](./img/img2.png)
+
+#### 2.2.3 Pertanyaan
+
+1. Pada class BukuMain, tunjukkan baris kode program yang digunakan untuk proses instansiasi!
+Apa nama object yang dihasilkan?
+2. Bagaimana cara mengakses atribut dan method dari suatu objek?
+3. Mengapa hasil output pemanggilan method tampilInformasi() pertama dan kedua berbeda?
