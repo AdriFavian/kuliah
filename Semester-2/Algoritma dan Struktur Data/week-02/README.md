@@ -137,3 +137,6 @@ nama object yang dihasilkan: `bk1`
 
 2. menggunakan metode "notasi titik"
 seperti pada contoh: `bk1.tampilInformasi();`
+
+3. dikarenakan setelah method `tampilInformasi()` yang pertama dijalankan, ada method `bk1.terjual()` dan `bk1.gantiHarga ()` 
+yang dimana method tersebut merubah data dari stok dan harga dari objek tersebut, sehingga saat method `tampilInformasi()` yang kedua di jalankan, akan menghasilkan output yang berbeda.
