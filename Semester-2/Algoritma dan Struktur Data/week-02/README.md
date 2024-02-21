@@ -163,6 +163,7 @@ Code:
         bk2.terjual(11, bk2.judul);
         bk2.tampilInformasi();
     }
-}```
+}
+```
 
 #### 2.3.2 Verifikasi Hasil Percobaan
