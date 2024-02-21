@@ -9,7 +9,9 @@
 
 ### Percobaan 1: Deklarasi Class, Atribut dan Method
 membuat class beserta atribut dan method yang dimilikinya.
-Code: 
+
+Code:
+ 
 ```
 public class Buku18 {
     
