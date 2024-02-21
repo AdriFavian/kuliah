@@ -12,7 +12,7 @@ membuat class beserta atribut dan method yang dimilikinya.
 </br>
 Code:
 
-```
+```java
 public class Buku18 {
     
     String judul, pengarang;
@@ -84,7 +84,7 @@ sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih bes
     - gantiHarga(hrg: int): int
 
 4.
-```
+```java
   void terjual(int jml, String judul) {
         if (stok > 0) {
         stok-=jml;
@@ -100,7 +100,7 @@ sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih bes
 ### Percobaan 2: Instansiasi Object, serta Mengakses Atribut dan Method
 
 Code:
-```
+```java
 public class BukuMain18 {
     public static void main(String[] args) {
         Buku18 bk1 = new Buku18();
