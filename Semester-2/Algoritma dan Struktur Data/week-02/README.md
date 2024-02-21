@@ -135,5 +135,5 @@ Apa nama object yang dihasilkan?
 ```Buku18 bk1 = new Buku18();```
 nama object yang dihasilkan: `bk1`
 
-2. menggunakan metode `notasi titik`
+2. menggunakan metode "notasi titik"
 seperti pada contoh: `bk1.tampilInformasi();`
