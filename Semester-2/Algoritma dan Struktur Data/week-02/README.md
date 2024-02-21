@@ -170,3 +170,13 @@ public class BukuMain18 {
 #### 2.3.2 Verifikasi Hasil Percobaan
 
 ![image](./img/img3.png)
+
+#### 2.3.3 Pertanyaan
+
+1. Pada class `Buku` di Percobaan 3, tunjukkan baris kode program yang digunakan untuk mendeklarasikan konstruktor berparameter!
+2. Perhatikan class `BukuMain`. Apa sebenarnya yang dilakukan pada baris program berikut?
+    ```java 
+    Buku18 bk2 = new Buku18 ("Self Reward", "Maheera Ayesha", 160, 29, 59000);```
+3. Hapus konstruktor default pada class `Buku`, kemudian compile dan run program. Bagaimana hasilnya? Jelaskan mengapa hasilnya demikian!
+4. Setelah melakukan instansiasi object, apakah method di dalam class `Buku` harus diakses secara berurutan? Jelaskan alasannya!
+5. Buat object baru dengan nama `buku<NamaMahasiswa>` menggunakan konstruktor berparameter dari class `Buku`!
