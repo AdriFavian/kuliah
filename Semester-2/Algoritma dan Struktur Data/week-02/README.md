@@ -11,3 +11,6 @@
 
 membuat class beserta atribut dan method yang dimilikinya.
 
+![image](./img/img1.png)
+
+
