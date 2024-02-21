@@ -8,8 +8,8 @@
 ## Praktikum
 
 ### Percobaan 1: Deklarasi Class, Atribut dan Method
-
 membuat class beserta atribut dan method yang dimilikinya.
+#### 2.1.2 Verifikasi Hasil Percobaan
 
 ![image](./img/img1.png)
 
