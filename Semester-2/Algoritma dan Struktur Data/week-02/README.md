@@ -132,7 +132,9 @@ Apa nama object yang dihasilkan?
 #### 2.2.4 Jawaban
 
 1. baris kode program yang digunakan untuk proses instansiasi:
-```Buku18 bk1 = new Buku18();```
+```java
+Buku18 bk1 = new Buku18();
+```
 nama object yang dihasilkan: `bk1`
 
 2. menggunakan metode "notasi titik"
@@ -181,3 +183,15 @@ public class BukuMain18 {
 3. Hapus konstruktor default pada class `Buku`, kemudian compile dan run program. Bagaimana hasilnya? Jelaskan mengapa hasilnya demikian!
 4. Setelah melakukan instansiasi object, apakah method di dalam class `Buku` harus diakses secara berurutan? Jelaskan alasannya!
 5. Buat object baru dengan nama `buku<NamaMahasiswa>` menggunakan konstruktor berparameter dari class `Buku`!
+
+#### 2.3.4 Jawaban
+
+1. baris kode program yang digunakan untuk mendeklarasikan konstruktor berparameter adalah: 
+    ```java 
+    Buku bk2 = new Buku ("Self Reward", "Maheera Ayesha", 160, 29, 59000);
+    ```
+2. baris kode program tersebut sedang mendeklarasikan konstruktor berparameter, paramater tersebut menampung nilai baru yang diisikan ke setiap atribut.
+
+3. error, dan tidak dapat dijalankan. Dikarenakan baris kode tersebut adalah konstruktor default yang diperlukan jika kita memiliki objek yang tidak diberi nilai awal untuk semua atributnya.
+
+4. 
