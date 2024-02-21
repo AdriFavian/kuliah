@@ -87,7 +87,8 @@ sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih bes
 
     - gantiHarga(hrg: int): int
 
-4.) ```
+4.) 
+```
   void terjual(int jml, String judul) {
         if (stok > 0) {
         stok-=jml;
