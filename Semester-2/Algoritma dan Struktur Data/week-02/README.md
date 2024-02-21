@@ -194,4 +194,13 @@ public class BukuMain18 {
 
 3. error, dan tidak dapat dijalankan. Dikarenakan baris kode tersebut adalah konstruktor default yang diperlukan jika kita memiliki objek yang tidak diberi nilai awal untuk semua atributnya.
 
-4. 
+4. tidak, dikarenakan method yang berada dalam class Buku bersifat indenpenden atau dapat dipanggil satu-persatu
+5. 
+```java
+Buku18 bukuAdri = new Buku18 ("cara cepat menjadi milioner dalam 1 detik", "Mohammad Adri Favian", 3, 18, 10000);
+bukuAdri.tampilInformasi();
+```
+
+##
+### 2.4 Latihan Praktikum
+

@@ -18,5 +18,8 @@ public class BukuMain18 {
         Buku18 bk2 = new Buku18 ("Self Reward", "Maheera Ayesha", 160, 29, 59000);
         bk2.terjual(11, bk2.judul);
         bk2.tampilInformasi();
+
+        Buku18 bukuAdri = new Buku18 ("cara cepat menjadi milioner dalam 1 detik", "Mohammad Adri Favian", 3, 18, 10000);
+        bukuAdri.tampilInformasi();
     }
 }
