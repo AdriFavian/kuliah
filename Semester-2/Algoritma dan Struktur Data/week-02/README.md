@@ -96,7 +96,7 @@ sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih bes
 
 5. method `restock()` mempunyai satu paramater berupa bilangan `int`, dikarenakan restock adalah aktifitas untuk menambahkan stock barang, dimana barang tesebut diwakilkan oleh jumlah yang biasanya memakai tipe data `int`.
 
-
+##
 ### Percobaan 2: Instansiasi Object, serta Mengakses Atribut dan Method
 
 Code:
@@ -140,3 +140,6 @@ seperti pada contoh: `bk1.tampilInformasi();`
 
 3. dikarenakan setelah method `tampilInformasi()` yang pertama dijalankan, ada method `bk1.terjual()` dan `bk1.gantiHarga ()` 
 yang dimana method tersebut merubah data dari stok dan harga dari objek tersebut, sehingga saat method `tampilInformasi()` yang kedua di jalankan, akan menghasilkan output yang berbeda.
+
+##
+### Percobaan 3: Membuat Konstruktor
