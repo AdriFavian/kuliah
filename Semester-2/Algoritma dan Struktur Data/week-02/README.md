@@ -145,7 +145,8 @@ yang dimana method tersebut merubah data dari stok dan harga dari objek tersebut
 ### Percobaan 3: Membuat Konstruktor
 
 Code:
-```public class BukuMain18 {
+```java
+public class BukuMain18 {
     public static void main(String[] args) {
         Buku18 bk1 = new Buku18();
         bk1.judul = "Today Ends Tomorrow Comes";
