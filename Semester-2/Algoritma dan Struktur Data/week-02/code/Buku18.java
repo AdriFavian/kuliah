@@ -1,10 +1,10 @@
 public class Buku18 {
     
     String judul, pengarang;
-    int halaman, stok, harga;
+    int halaman, stok, harga, terjual;
 
     public Buku18() {
-
+        //default constructor
     }
 
     public Buku18 (String jud, String pg, int hal, int stok, int har) {
@@ -21,6 +21,9 @@ public class Buku18 {
         System.out.println("Jumlah halaman: " + halaman); 
         System.out.println("Sisa stok: " + stok); 
         System.out.println("Harga: " + harga); 
+        System.out.println("Harga total: " + hitungHargaTotal());
+        System.out.println("Diskon: " + hitungDiskon());
+        System.out.println("Harga bayar: " + hitungHargaBayar());
     }
 
     void terjual(int jml, String judul) {
@@ -37,5 +40,24 @@ public class Buku18 {
 
     void gantiHarga(int hrg) {
         harga = hrg;
+    }
+
+    int hitungHargaTotal() {
+        return harga * terjual;
+    }
+    
+    double hitungDiskon() {
+        int hargaTotal = hitungHargaTotal();
+        if (hargaTotal > 150000) {
+            return hargaTotal * 0.12;
+        } else if (hargaTotal >= 75000 && hargaTotal <= 150000) {
+            return hargaTotal * 0.05;
+        } else {
+            return 0;
+        }
+    }
+    
+    int hitungHargaBayar() {
+        return hitungHargaTotal() - (int)hitungDiskon();
     }
 }

@@ -203,4 +203,158 @@ bukuAdri.tampilInformasi();
 
 ##
 ### 2.4 Latihan Praktikum
+1. Menambahkan tiga method yaitu `hitungHargaTotal()`, `hitungDiskon()`, dan `hitungHargaBayar()` dengan spesifikasi yang telah dijelaskan, juga menyesuikan dengan class diagram yang diberikan.  
+
+Full code `Buku.java`:
+```java
+    public class Buku18 {
+    
+    String judul, pengarang;
+    int halaman, stok, harga, terjual;
+
+    public Buku18() {
+        //default constructor
+    }
+
+    public Buku18 (String jud, String pg, int hal, int stok, int har) {
+        judul = jud;
+        pengarang = pg;
+        halaman = hal;
+        this.stok = stok;
+        harga = har;
+    }
+    
+    void tampilInformasi() {
+        System.out.println("Judul: " + judul);
+        System.out.println("Pengarang: " + pengarang); 
+        System.out.println("Jumlah halaman: " + halaman); 
+        System.out.println("Sisa stok: " + stok); 
+        System.out.println("Harga: " + harga); 
+        System.out.println("Harga total: " + hitungHargaTotal());
+        System.out.println("Diskon: " + hitungDiskon());
+        System.out.println("Harga bayar: " + hitungHargaBayar());
+    }
+
+    void terjual(int jml, String judul) {
+        if (stok > 0) {
+        stok-=jml;
+        } else {
+        System.out.println("Stok buku " + judul + " sudah habis!");
+        }
+    }
+    
+    void restock(int jml) {
+        stok += jml;
+    }
+
+    void gantiHarga(int hrg) {
+        harga = hrg;
+    }
+
+    int hitungHargaTotal() {
+        return harga * terjual;
+    }
+
+    int hitungDiskon() {
+        int hargaTotal = hitungHargaTotal();
+        if (hargaTotal > 150000) {
+            return (int) (hargaTotal * 0.12);
+        } else if (hargaTotal == 75000 || hargaTotal == 150000) {
+            return (int) (hargaTotal * 0.05);
+        } else {
+            return 0;
+        }
+    }
+    
+    int hitungHargaBayar() {
+        int hargaTotal = hitungHargaTotal();
+        int diskon = hitungDiskon();
+        return hargaTotal - diskon;
+    }    
+}
+```
+
+2. Membuat program berdasarkan class diagram berikut!
+
+    | Dragon |
+    |---|
+    | x: int <br> y: int <br> width: int <br> height: int |
+    | moveLeft(): void <br> moevRight(): void <br> moveUp(): void <br> moveDown(): void <br> printPosition(): void <br> detectCollision(x: int, y: int): void <br> 
+
+Full code `Dragon.java`:
+```java
+public class Dragon {
+    int x, y; // koordinat posisi 
+    int width, height; // dimensi area permainan
+
+    // Constructor untuk inisialisasi dragon
+    public Dragon(int x, int y, int gameWidth, int gameHeight) {
+        this.x = x;
+        this.y = y;
+        width = gameWidth;
+        height = gameHeight;
+    }
+
+    public void moveLeft() {
+        if (x > 0) {
+            x--;
+            printPosition();
+        } else {
+            detectCollision(x, y);
+        }
+    }
+
+    public void moveRight() {
+        if (x < width) {
+            x++;
+            printPosition();
+        } else {
+            detectCollision(x, y);
+        }
+    }
+    
+    public void moveUp() {
+        if (y > 0) {
+            y--;
+            printPosition();
+        } else {
+            detectCollision(x, y);
+        }
+    }
+    
+    public void moveDown() {
+        if (y < height) {
+            y++;
+            printPosition();
+        } else {
+            detectCollision(x, y);
+        }
+    }
+
+    public void printPosition() {
+        System.out.println("Posisi dragon anda saat ini - X: " + x + ", Y: " + y);
+    }
+
+    public void detectCollision(int x, int y) {
+        System.out.println("Game Over");
+    }
+
+    public static void main(String[] args) {
+        Dragon dragon = new Dragon(5, 5, 10, 10);
+
+        dragon.printPosition();
+        dragon.moveUp();
+        dragon.moveUp();
+        dragon.moveUp();
+        dragon.moveUp();
+        dragon.moveUp();
+        dragon.moveUp();
+    }
+}
+```
+
+Hasil program setelah ***dragon*** di posisikan keluar dari arena agar game over:
+
+![image](./img/img4.png)
+
 
