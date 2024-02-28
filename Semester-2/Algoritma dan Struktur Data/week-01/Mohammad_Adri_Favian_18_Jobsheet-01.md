@@ -271,3 +271,230 @@ terjual.
 4. Jika terdapat informasi tambahan berupa pengurangan stock karena bunga tersebut mati.
 Dengan rincian Aglonema -1, Keladi -2, Alocasia -0, Mawar -5.
 
+code `Fungsi18`:
+
+```java
+import java.util.Scanner;
+public class Fungsi18 {
+    static Scanner sc = new Scanner(System.in);
+    static int[][] tokoBunga = {
+        {10, 5, 15, 7},
+        {6, 11, 9, 12},
+        {2, 10, 10, 5},
+        {5, 7, 12, 9}
+    };
+    static String[] namaBunga = {"Aglonema", "Keladi", "Alocasia", "Mawar"};
+    public static void main(String[] args) {
+        pendapatan();
+        updateStock(4);
+        sc.close();
+    }
+
+    static void pendapatan() {
+        System.out.println("============================================================");
+        System.out.println("Pendapatan Setiap Cabang");
+        System.out.println("============================================================");
+        System.out.printf("%-14s %-9s %-7s %-9s %-6s %-20s\n", "Cabang", "Aglonema", "Keladi", "Alocasia", "Mawar", "Pendapatan");
+        System.out.println("------------------------------------------------------------");
+
+        for (int i=0; i< tokoBunga.length; i++) {
+            int pendapatan = tokoBunga[i][0] * 75000
+                           + tokoBunga[i][1] * 50000
+                           + tokoBunga[i][2] * 60000
+                           + tokoBunga[i][3] * 10000;
+        
+            System.out.printf("%-14s %-9s %-7s %-9s %-6s %-10s \n", "tokoBunga " + (i + 1),
+                tokoBunga[i][0], tokoBunga[i][1], tokoBunga[i][2], tokoBunga[i][3],
+                "Rp " + pendapatan);
+        }
+        
+    }
+
+    static void updateStock(int cabang) {
+        int index = cabang - 1;
+
+        System.out.println("============================================================");
+        System.out.println("Stok bunga pada tokoBunga " + cabang) ;
+        System.out.println("============================================================");
+        
+        for (int i = 0; i < tokoBunga[3].length; i++) {
+            System.out.println(namaBunga[i] + ": " + tokoBunga[3][i]);
+        }
+
+        System.out.println("--------------------------------------");
+        System.out.print("Apakah ada bunga yang mati? (y/n) : ");
+        String pilihan = sc.next();
+
+        if (pilihan.equalsIgnoreCase("y")) {
+            int[] penguranganBunga = new int[4];
+
+            for (int i=0; i < namaBunga.length; i++) {
+                System.out.print("Bunga " + namaBunga[i] + ": ");
+                penguranganBunga[i] = sc.nextInt();
+            }
+
+            System.out.println("============================================================");
+            System.out.println("Stok bunga saat ini: ");
+            System.out.println("============================================================");
+
+            for (int i = 0; i < namaBunga.length; i++) {
+                int stokSetelahPengurangan = tokoBunga[index][i] - penguranganBunga[i];
+                System.out.println(namaBunga[i] + ": " + stokSetelahPengurangan);
+            }
+        }
+    }
+}
+```
+
+Hasil Percobaan:
+
+![image](./img/img6.png)
+
+### Tugas
+
+1. Membuat program menemukan kode plat mobil
+
+code `Tugas1`:
+
+```java
+import java.util.Scanner;
+public class Tugas1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char[] KODE = {'A', 'B', 'D', 'E', 'F', 'G', 'H', 'L', 'N', 'T'};
+
+        char[][] KOTA = {
+                {'B', 'A', 'N', 'T', 'E', 'N'},
+                {'J', 'A', 'K', 'A', 'R', 'T', 'A'},
+                {'B', 'A', 'N', 'D', 'U', 'N', 'G'},
+                {'C', 'I', 'R', 'E', 'B', 'O', 'N'},
+                {'B', 'O', 'G', 'O', 'R'},
+                {'P', 'E', 'K', 'A', 'L', 'O', 'N', 'G', 'A', 'N'},
+                {'S', 'E', 'M', 'A', 'R', 'A', 'N', 'G'},
+                {'S', 'U', 'R', 'A', 'B', 'A', 'Y', 'A'},
+                {'M', 'A', 'L', 'A', 'N', 'G'},
+                {'T', 'E', 'G', 'A', 'L'}
+        };
+
+        boolean found = false;
+
+        while (!found) {
+            System.out.print("Masukkan kode plat nomor : ");
+            char kodePlat = sc.next().toUpperCase().charAt(0);
+
+            for (int i=0; i < KODE.length; i++) {
+                if (KODE[i] == kodePlat) {
+                    for (int j=0; j < KOTA[i].length; j++) {
+                        System.out.print(KOTA[i][j]);
+                    }
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                System.out.println("Kode plat nomor tidak ditemukan, silahkan coba lagi !");
+            }
+        }sc.close();
+    }
+}
+```
+
+Hasil percobaan `Tugas1`:
+
+![image](./img/img7.png)
+
+2. Membuat program untuk menghitung rumus kecepatan, jarak, dan waktu dengan memiliki fungsi sebagai berikut:</br>
+a. Menu untuk memilih rumus yang akan dihitung (kecepatan/jarak/waktu)</br>
+b. Menghitung hasil perhitungan Kecepatan</br>
+c. Menghitung hasil perhitungan Jarak</br>
+d. Menghitung hasil perhitungan Waktu
+
+code `Tugas2`:
+
+```java
+import java.util.Scanner;
+public class Tugas2 {
+    static Scanner sc = new Scanner(System.in);
+
+    static double s,t,v;
+    
+    public static void main(String[] args) {
+        menuUtama();
+    }
+
+    private static void menuUtama() {
+        System.out.println("Menghitung Kecepatan, Jarak, dan Waktu");
+        System.out.println("1. Hitung Kecepatan");
+        System.out.println("2. Hitung Jarak");
+        System.out.println("3. Hitung Waktu");
+        System.out.print("Pilihan: ");
+        
+        int pilihan = sc.nextInt();
+
+        switch (pilihan) {
+            case 1:
+                hitungKecepatan();
+                break;
+
+            case 2:
+                hitungJarak();
+                break;
+
+            case 3:
+                hitungWaktu();
+                break;
+
+            default:
+                System.out.println("Pilihan tidak valid!");
+        }
+    }
+
+    private static void hitungKecepatan() {
+        System.out.print("Masukkan Jarak: ");
+        s = sc.nextDouble();
+        System.out.print("Masukkan Waktu: ");
+        t = sc.nextDouble();
+        System.out.println("Kecepatan: " + getKecepatan(s, t));
+    }
+
+    private static void hitungJarak() {
+        System.out.print("Masukkan Kecepatan: ");
+        v = sc.nextDouble();
+        System.out.print("Masukkan Waktu: ");
+        t = sc.nextDouble();
+        System.out.println("Jarak: " + getJarak(v, t));
+    }
+
+    private static void hitungWaktu() {
+        System.out.print("Masukkan Jarak: ");
+        s = sc.nextDouble();
+        System.out.print("Masukkan Kecepatan: ");
+        v = sc.nextDouble();
+        System.out.println("Waktu: " + getWaktu(s, v));
+    }
+
+    private static double getKecepatan(double s, double t) {
+        return s / t;
+    }
+
+    private static double getJarak(double v, double t) {
+        return v * t;
+    }
+
+    private static double getWaktu(double s, double v) {
+        return s / v;
+    }
+}
+```
+
+Hasil percobaan `Tugas2`:</br>
+`Kecepatan`
+
+![image](./img/img8.png)</br>
+`Jarak`
+
+![image](./img/img9.png)</br>
+`Waktu`
+
+![image](./img/img10.png)
