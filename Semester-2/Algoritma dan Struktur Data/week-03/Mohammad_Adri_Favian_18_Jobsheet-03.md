@@ -72,6 +72,6 @@ PersegiPanjang [] ppArray = new PersegiPanjang[3]
 ### Percobaan 2 : Menerima Input Isian Array Menggunakan Looping
 
 #### 3.3.1 Langkah-langkah Percobaan
-
+    
 
 
