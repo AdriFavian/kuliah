@@ -203,4 +203,216 @@ b. Pada kerucut, inputan untuk atribut hanya jari-jari dan sisi miring
 c. Pada limas segi empat sama sisi, inputan untuk atribut hanya panjang sisi alas dan tinggi limas
 d. Pada bola, inpuntan untuk atribut hanya jari-jari</br></br></br>
 
-# MASIH DALAM TAHAP PENGERJAAN
+Code:
+
+```java
+package LatihanPraktikum;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Masukkan Jumlah Kerucut: ");
+        
+        Kerucut[] arrayKerucut = new Kerucut[sc.nextInt()];
+
+        for(int i=0; i<arrayKerucut.length; i++) {
+
+            arrayKerucut[i] = new Kerucut();
+            System.out.println("\nKerucut ke-" + (i+1));
+            System.out.print("Masukkan jari-jari: ");
+            arrayKerucut[i].jarijari = sc.nextInt();
+            System.out.print("Masukkan sisi miring: ");
+            arrayKerucut[i].sisimiring = sc.nextInt();
+        }
+
+        System.out.println("");
+        
+        System.out.print("\nMasukkan Jumlah Limas Segi Empat: ");
+        LimasSegiEmpatSamaSisi[] lseArray = new LimasSegiEmpatSamaSisi[sc.nextInt()];
+        
+        for(int i=0; i<lseArray.length; i++) {
+            
+            lseArray[i] = new LimasSegiEmpatSamaSisi();
+            System.out.println("\nLimas Segi Empat ke-" + (i+1));
+            System.out.print("Masukkan sisi alas: ");
+            lseArray[i].sisiAlas = sc.nextInt();        System.out.print("Masukkan tinggi limas: ");
+            lseArray[i].tinggiLimas = sc.nextInt();
+        }
+        
+        System.out.println("");
+        
+        System.out.print("\nMasukkan Jumlah Bola: ");
+        Bola[] blArray = new Bola[sc.nextInt()];
+        
+        for(int i=0; i<blArray.length; i++) {
+            
+            blArray[i] = new Bola();
+            System.out.println("\nBola ke-" + (i+1));
+            System.out.print("Masukkan jari-jari: ");
+            blArray[i].jarijari = sc.nextInt();
+        }
+        
+        System.out.println("");
+        
+        for(int i=0; i<arrayKerucut.length; i++) {
+            System.out.println("\nKerucut ke-" + (i+1));
+            System.out.println("Luas Permukaan: " + String.format("%.2f", arrayKerucut[i].hitungLuasPermukaan()) + ", Volume: " + String.format("%.2f", arrayKerucut[i].hitungVolume()));
+        }
+
+        for(int i=0; i<lseArray.length; i++) {
+            System.out.println("\nLimas Segi Empat ke-" + (i+1));
+            System.out.println("Luas Permukaan: " + String.format("%.2f", lseArray[i].hitungLuasPermukaan()) + ", Volume: " + String.format("%.2f", lseArray[i].hitungVolume()));
+        }
+
+        for(int i=0; i<blArray.length; i++) {
+            System.out.println("\nBola ke-" + (i+1));
+            System.out.println("Luas Permukaan: " + String.format("%.2f", blArray[i].hitungLuasPermukaan()) + ", Volume: " + String.format("%.2f", blArray[i].hitungVolume()));
+        }
+
+        sc.close();
+    }
+}
+```
+
+Hasil:
+
+```text
+Masukkan Jumlah Kerucut: 2
+
+Kerucut ke-1
+Masukkan jari-jari: 3
+Masukkan sisi miring: 4
+
+Kerucut ke-2
+Masukkan jari-jari: 4
+Masukkan sisi miring: 5
+
+
+Masukkan Jumlah Limas Segi Empat: 2
+
+Limas Segi Empat ke-1
+Masukkan sisi alas: 3
+Masukkan tinggi limas: 4
+
+Limas Segi Empat ke-2
+Masukkan sisi alas: 4
+Masukkan tinggi limas: 5
+
+
+Masukkan Jumlah Bola: 2
+
+Bola ke-1
+Masukkan jari-jari: 3
+
+Bola ke-2
+Masukkan jari-jari: 4
+
+
+Kerucut ke-1
+Luas Permukaan: 65.97, Volume: 65.97
+
+Kerucut ke-2
+Luas Permukaan: 113.10, Volume: 150.80
+
+Limas Segi Empat ke-1
+Luas Permukaan: 33.00, Volume: 12.00
+
+Limas Segi Empat ke-2
+Luas Permukaan: 56.00, Volume: 26.67
+
+Bola ke-1
+Luas Permukaan: 113.10, Volume: 113.10
+
+Bola ke-2
+Luas Permukaan: 201.06, Volume: 268.08
+```
+
+2. Sebuah kampus membutuhkan program untuk menampilkan informasi mahasiswa berupa nama,
+nim, jenis kelamin dan juga IPK mahasiswa. Program dapat menerima input semua informasi
+tersebut, kemudian menampilkanya kembali ke user. Implementasikan program tersebut jika
+dimisalkan terdapat 3 data mahasiswa yang tersedia
+
+code Mhs:
+
+```java
+package LatihanPraktikum;
+public class Mhs {
+    String nama, nim;
+    char kelamin;
+    double ipk;
+
+    public Mhs() {
+        
+    }    
+}
+```
+
+Code Main:
+
+```java
+package LatihanPraktikum;
+import java.util.Scanner;
+public class MainMhs {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Masukkan Jumlah Mahasiswa: ");
+        Mhs[] mhsArray = new Mhs[sc.nextInt()];
+
+        for(int i=0; i<mhsArray.length; i++) {
+            System.out.println("\nMasukkan Data Mahasiswa ke-" + (i+1));
+            mhsArray[i] = new Mhs();
+            System.out.print("Masukkan Nama: ");
+            mhsArray[i].nama = sc.next();
+            System.out.print("Masukkan NIM: ");
+            mhsArray[i].nim = sc.next();
+            System.out.print("Masukkan Jenis Kelamin: ");
+            mhsArray[i].kelamin = sc.next().toUpperCase().charAt(0);
+            System.out.print("Masukkan IPK: ");
+            mhsArray[i].ipk = sc.nextDouble();
+        }
+
+        for(int i=0; i<mhsArray.length; i++) {
+            System.out.println("\nData Mahasiswa ke-" + (i+1));
+            System.out.println("Nama: " + mhsArray[i].nama);
+            System.out.println("NIM: " + mhsArray[i].nim);
+            System.out.println("Jenis Kelamin: " + mhsArray[i].kelamin);
+            System.out.println("Nilai IPK: " + mhsArray[i].ipk);
+        }
+
+        sc.close();
+    }
+}
+```
+
+hasil:
+
+```text
+Masukkan Jumlah Mahasiswa: 2
+
+Masukkan Data Mahasiswa ke-1
+Masukkan Nama: Adri
+Masukkan NIM: 234
+Masukkan Jenis Kelamin: l
+Masukkan IPK: 4
+
+Masukkan Data Mahasiswa ke-2
+Masukkan Nama: Vian
+Masukkan NIM: 123
+Masukkan Jenis Kelamin: p
+Masukkan IPK: 4
+
+Data Mahasiswa ke-1
+Nama: Adri
+NIM: 234
+Jenis Kelamin: L
+Nilai IPK: 4.0
+
+Data Mahasiswa ke-2
+Nama: Vian
+NIM: 123
+Jenis Kelamin: P
+Nilai IPK: 4.0
+```
