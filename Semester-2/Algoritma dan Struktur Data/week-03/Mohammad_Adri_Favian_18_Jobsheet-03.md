@@ -45,7 +45,7 @@ public class ArrayObjects {
 
 #### 3.2.2 Verifikasi Hasil Percobaan
 
-![image](./img/img1.png)
+![image](./img/IMG1.png)
 
 #### 3.2.3 Pertanyaan
 1. Berdasarkan uji coba 3.2, apakah class yang akan dibuat array of object harus selalu memiliki
@@ -104,7 +104,7 @@ public class ArrayObjects {
 
 #### 3.3.2 Verifikasi Hasil Percobaan
 
-![image](./img/img2.png)
+![image](./img/IMG2.png)
 
 #### 3.3.3 Pertanyaan
 
@@ -166,7 +166,7 @@ public class ArrayBalok {
 
 #### 3.4.2 Verifikasi Hasil Percobaan
 
-![image](./img/img3.png)
+![image](./img/IMG3.png)
 
 #### 3.4.3 Pertanyaan
 
