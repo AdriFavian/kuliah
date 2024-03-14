@@ -4,7 +4,7 @@
 **NIM :** 2341720185<br>
 **Kelas :** TI-1B<br>
 **Absen :** 18
-
+---
 ## Praktikum
 
 ### Percobaan 1: Deklarasi Class, Atribut dan Method
@@ -96,7 +96,7 @@ sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih bes
 
 5. method `restock()` mempunyai satu paramater berupa bilangan `int`, dikarenakan restock adalah aktifitas untuk menambahkan stock barang, dimana barang tesebut diwakilkan oleh jumlah yang biasanya memakai tipe data `int`.
 
-##
+---
 ### Percobaan 2: Instansiasi Object, serta Mengakses Atribut dan Method
 
 Code:
@@ -143,7 +143,7 @@ seperti pada contoh: `bk1.tampilInformasi();`
 3. dikarenakan setelah method `tampilInformasi()` yang pertama dijalankan, ada method `bk1.terjual()` dan `bk1.gantiHarga ()` 
 yang dimana method tersebut merubah data dari stok dan harga dari objek tersebut, sehingga saat method `tampilInformasi()` yang kedua di jalankan, akan menghasilkan output yang berbeda.
 
-##
+---
 ### Percobaan 3: Membuat Konstruktor
 
 Code:
@@ -201,7 +201,7 @@ Buku18 bukuAdri = new Buku18 ("cara cepat menjadi milioner dalam 1 detik", "Moha
 bukuAdri.tampilInformasi();
 ```
 
-##
+---
 ### 2.4 Latihan Praktikum
 1. Menambahkan tiga method yaitu `hitungHargaTotal()`, `hitungDiskon()`, dan `hitungHargaBayar()` dengan spesifikasi yang telah dijelaskan, juga menyesuikan dengan class diagram yang diberikan.  
 
@@ -273,7 +273,7 @@ Full code `Buku.java`:
     }    
 }
 ```
-
+##
 2. Membuat program berdasarkan class diagram berikut!
 
     | Dragon |

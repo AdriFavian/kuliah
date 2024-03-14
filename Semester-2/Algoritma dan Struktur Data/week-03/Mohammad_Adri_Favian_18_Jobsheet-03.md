@@ -5,6 +5,7 @@
 **Kelas :** TI-1B<br>
 **Absen :** 18
 
+---
 ### Percobaan 1 : Membuat Array dari Object, Mengisi dan Menampilkan
 
 #### 3.2.1 Langkah-langkah Percobaan
@@ -68,7 +69,7 @@ PersegiPanjang [] ppArray = new PersegiPanjang[3]
 
 #### 3.2.4 jawab
 
-
+---
 ### Percobaan 2 : Menerima Input Isian Array Menggunakan Looping
 
 #### 3.3.1 Langkah-langkah Percobaan
@@ -121,7 +122,7 @@ pgArray[5].sisi=20;
 pada ppArray[i] sekaligus ppArray[0]?Jelaskan !
 
 #### 3.3.4 Jawaban
-
+---
 ### Percobaan 3: Penambahan Operasi Matematika di Dalam Method
 
 #### 3.4.1 Langkah-langkah Percobaan
@@ -193,7 +194,7 @@ atributnya sebagai yang diberikan pada contoh:
 **hitungLuas() dan hitungKeliling()**.
 
 #### 3.4.4 Jawaban
-
+---
 ### 3.5 Latihan Praktikum
 
 Buatlah program yang dapat menghitung luas permukaan dan volume bangun ruang kerucut, limas segi empat sama sisi, dan bola. Buatlah 3 (tiga) class sesuai dengan jumlah jenis bangun ruang. Buatlah satu main class untuk membuat array of objects yang menginputkan atribut-atribut yang ada menggunakan konstruktor semua bangun ruang tersebut. Dengan ketentuan:

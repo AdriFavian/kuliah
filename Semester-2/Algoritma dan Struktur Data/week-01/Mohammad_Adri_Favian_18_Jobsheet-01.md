@@ -480,7 +480,7 @@ public class Tugas2 {
 
     private static double getJarak(double v, double t) {
         return v * t;
-    }
+    }       
 
     private static double getWaktu(double s, double v) {
         return s / v;
