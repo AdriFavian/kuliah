@@ -1,4 +1,3 @@
-package minggu5;
 public class MainMobil18 {
     public static void main(String[] args) {
         mobil18[] mobil = {

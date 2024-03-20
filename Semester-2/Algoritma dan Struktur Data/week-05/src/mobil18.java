@@ -1,4 +1,3 @@
-package minggu5;
 import java.util.ArrayList;
 
 public class mobil18 {

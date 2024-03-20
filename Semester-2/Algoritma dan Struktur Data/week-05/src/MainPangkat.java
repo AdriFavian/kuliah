@@ -1,4 +1,3 @@
-package minggu5;
 import java.util.Scanner;
 public class MainPangkat {
     public static void main(String[] args) {

@@ -1,4 +1,3 @@
-package minggu5;
 import java.text.DecimalFormat;
 public class Sum {
     int elemen;
