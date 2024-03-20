@@ -13,7 +13,6 @@
 `Faktorial.java`
 
 ```java
-package minggu5;
     public class Faktorial {
         public int nilai;
         
@@ -40,7 +39,6 @@ package minggu5;
 `MainFaktorial.java`
 
 ```java
-package minggu5;
 import java.util.Scanner;
 public class MainFaktorial {
     public static void main(String[] args) {
@@ -113,7 +111,6 @@ for?Buktikan!</br>
 `Pangkat.java`
 
 ```java
-package minggu5;
 public class Pangkat {
     public int nilai,pangkat;
 
@@ -142,7 +139,6 @@ public class Pangkat {
 `MainPangkat.java`
 
 ```java
-package minggu5;
 import java.util.Scanner;
 public class MainPangkat {
 
@@ -215,7 +211,6 @@ switch-case!</br>
     Jawab: Hasil modifikasi full kode
 
     ```java
-    package minggu5;
     import java.util.Scanner;
 
     public class Pangkat {
@@ -301,7 +296,6 @@ switch-case!</br>
 `Sum.java`
 
 ```java
-package minggu5;
 import java.text.DecimalFormat;
 public class Sum {
     int elemen;
@@ -340,7 +334,6 @@ public class Sum {
 `MainSum.java`
 
 ```java
-package minggu5;
 import java.util.Scanner;
 public class MainSum {
     public static void main(String[] args) {
@@ -385,7 +378,6 @@ dengan program!</br>
     Jawab: modifikasi kode pada `MainSum.java`
 
     ```java
-    package minggu5;
     import java.text.DecimalFormat;
     import java.util.Scanner;
     public class MainSum {
@@ -455,7 +447,6 @@ dengan program!</br>
 `mobil18.java`
 
 ```java
-package minggu5;
 import java.util.ArrayList;
 
 public class mobil18 {
@@ -520,7 +511,6 @@ public class mobil18 {
 `MainMobil18.java`
 
 ```java
-package minggu5;
 public class MainMobil18 {
     public static void main(String[] args) {
         mobil18[] mobil = {
