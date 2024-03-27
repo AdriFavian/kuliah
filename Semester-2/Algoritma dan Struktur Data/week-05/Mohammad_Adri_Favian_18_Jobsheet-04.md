@@ -1,4 +1,4 @@
-# Week 06 - JOBSHEET 5 - BRUTE FORCE DAN DIVIDE CONQUER
+# Week 05 - JOBSHEET 4 - BRUTE FORCE DAN DIVIDE CONQUER
 
 **Nama :** Mohammad Adri Favian<br>
 **NIM :** 2341720185<br>
